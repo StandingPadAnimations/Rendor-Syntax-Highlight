@@ -1,0 +1,78 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Rendor",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.rendor",
+					"match": "\\b(if|while|for|return|rdef|rdef_end|edef|or|not|is|and)\\b"
+				},
+				{
+					"name": "keyword.control.rendor",
+					"match": "#"
+				}
+			]
+		},
+		"constants" : {
+			"patterns": [
+				{
+					"name": "constant.character",
+					"match": "\\b(^|*|/|+|-|=|!|>|<)\\b"
+				},
+				{
+					"name": "constant.other",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "[0-9]"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.rendor",
+					"begin": "//",
+					"end": "\n"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.rendor",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.rendor",
+					"begin": "'",
+					"end": "'"
+				},
+				{
+					"name": "string.quoted.other.rendor",
+					"begin": "`",
+					"end": "`"
+				},
+				{
+					"name": "constant.character.escape.rendor",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.rendor"
+}

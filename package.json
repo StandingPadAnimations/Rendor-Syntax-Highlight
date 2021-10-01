@@ -1,0 +1,25 @@
+{
+    "name": "rendor-syntax-highlight",
+    "displayName": "Rendor Syntax Highlighting",
+    "description": "Syntax highlighting for the Rendor programming language ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rendor",
+            "aliases": ["Rendor", "rendor"],
+            "extensions": [".ren"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rendor",
+            "scopeName": "source.rendor",
+            "path": "./syntaxes/rendor.tmLanguage.json"
+        }]
+    }
+}
