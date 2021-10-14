@@ -17,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.rendor",
-					"match": "\\b(if|while|for|return|rdef|rdef_end|edef|or|not|is|and)\\b"
+					"match": "\\b(if|while|for|return|rdef|rdef_end|edef|or|not|is|and|import)\\b"
 				},
 				{
 					"name": "keyword.control.rendor",
@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.double-slash.rendor",
-					"begin": "//",
+					"begin": "~",
 					"end": "\n"
 				}
 			]
