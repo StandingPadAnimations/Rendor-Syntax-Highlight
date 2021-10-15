@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 					"name": "comment.line.double-slash.rendor",
-					"begin": "~",
+					"begin": "//",
 					"end": "\n"
 				}
 			]
