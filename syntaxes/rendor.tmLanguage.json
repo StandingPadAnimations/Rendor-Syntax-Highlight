@@ -10,6 +10,12 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#cpp-defs"
+		},
+		{
+			"include": "#functions"
 		}
 	],
 	"repository": {
@@ -17,11 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.rendor",
-					"match": "\\b(if|while|for|return|rdef|rdef_end|edef|or|not|is|and|import)\\b"
-				},
-				{
-					"name": "keyword.control.rendor",
-					"match": "#"
+					"match": "\\b(if|while|for|return|edef|or|not|is|and|import)\\b"
 				}
 			]
 		},
@@ -47,6 +49,29 @@
 					"name": "comment.line.double-slash.rendor",
 					"begin": "//",
 					"end": "\n"
+				}
+			]
+		},
+		"cpp-defs": {
+			"patterns": [
+				{
+					"name": "keyword.control.rendor",
+					"begin": "~",
+					"end": "\n"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.rendor",
+					"begin": "edef",
+					"end": "("
+				},
+				{
+					"name": "entity.name.rendor",
+					"begin": "#rdef",
+					"end": "("
 				}
 			]
 		},
