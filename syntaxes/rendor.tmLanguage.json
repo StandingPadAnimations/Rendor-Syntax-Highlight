@@ -3,6 +3,9 @@
 	"name": "Rendor",
 	"patterns": [
 		{
+			"include": "#constants"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -16,6 +19,9 @@
 		},
 		{
 			"include": "#functions"
+		},
+		{
+			"include": "#operators"
 		}
 	],
 	"repository": {
@@ -27,22 +33,26 @@
 				},
 				{
 					"name": "keyword.control.rendor",
-					"match": "\\b(i64|double|bool|string)\\b"
+					"match": "\\b(i64|double|bool|string|void)\\b"
+				}
+			]
+		},
+		"operators" :{
+			"patterns": [
+				{
+					"name": "keyword.operator.assignment.rendor",
+					"match": "\\b(\\=|\\!|\\>|\\<)\\b"
 				}
 			]
 		},
 		"constants" : {
 			"patterns": [
 				{
-					"name": "constant.character",
-					"match": "\\b(^|*|/|+|-|=|!|>|<)\\b"
-				},
-				{
-					"name": "constant.other",
+					"name": "constant.other.rendor",
 					"match": "\\b(true|false)\\b"
 				},
 				{
-					"name": "constant.numeric",
+					"name": "constant.numeric.rendor",
 					"match": "[0-9]"
 				}
 			]
