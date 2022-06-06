@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.rendor",
-					"match": "\\b(if|while|for|return|edef|or|not|is|and|import|else|export|cimport|extern|namespace)\\b"
+					"match": "\\b(if|while|for|return|edef|or|not|is|and|import|else|export|cimport|extern|namespace|let|mut)\\b"
 				},
 				{
 					"name": "keyword.control.rendor",
